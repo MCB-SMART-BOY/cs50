@@ -1,0 +1,116 @@
+{
+  "nodes": {
+    "check50": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1753232877,
+        "narHash": "sha256-3WxFdXECIjbTxHK65BFnxOroEYzu7iOJwm15gIjitLA=",
+        "owner": "cs50",
+        "repo": "check50",
+        "rev": "955e77caa6575a5a6bbd6cad68a047d47a5c8000",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cs50",
+        "ref": "v3.4.0",
+        "repo": "check50",
+        "type": "github"
+      }
+    },
+    "lib50": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1788577300,
+        "narHash": "sha256-y0k1TPN44oSkNJjhwBNG6L0ylw7cwN2KfqEjxASIxgE=",
+        "owner": "cs50",
+        "repo": "lib50",
+        "rev": "9a71b38b9498bea15a12ea5d531d4d75dee42ae3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cs50",
+        "repo": "lib50",
+        "type": "github"
+      }
+    },
+    "libcs50": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1789166567,
+        "narHash": "sha256-guITfJoNEiQAjfKiDKltWoP8VcLsyeEuzU4odhpwyUI=",
+        "owner": "cs50",
+        "repo": "libcs50",
+        "rev": "37709b01398c9d72a112b864f12c789a910c61fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cs50",
+        "ref": "v11.0.4",
+        "repo": "libcs50",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1789724158,
+        "narHash": "sha256-nlKgrm0dsVhOSopKheVBCcOpiIticufPPVLdVOI0euA=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "0a3468a402c449992505b6a9fc5b06580141b750",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "check50": "check50",
+        "lib50": "lib50",
+        "libcs50": "libcs50",
+        "nixpkgs": "nixpkgs",
+        "style50": "style50",
+        "submit50": "submit50"
+      }
+    },
+    "style50": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1774111265,
+        "narHash": "sha256-D2ucfVVGZFzmcAUyOfu97QJ8x9pzRo1hYrwZlV8MRN8=",
+        "owner": "cs50",
+        "repo": "style50",
+        "rev": "06e5404ad4442b4b4ac154659a9f660441e24228",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cs50",
+        "ref": "v3.0.0",
+        "repo": "style50",
+        "type": "github"
+      }
+    },
+    "submit50": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1753330613,
+        "narHash": "sha256-D71d8f2XfLrsDRBuEZK7B96UTUkJLkHsCWchDNO8epI=",
+        "owner": "cs50",
+        "repo": "submit50",
+        "rev": "31d72e69f75605f194f4103979c0bca905d05862",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cs50",
+        "ref": "v3.2.1",
+        "repo": "submit50",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

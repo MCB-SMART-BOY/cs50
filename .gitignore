@@ -1,0 +1,4 @@
+.cs50/
+.venv/
+__pycache__/
+*.py[cod]
