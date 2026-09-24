@@ -36,24 +36,11 @@ let
     # Upstream `make install` runs ldconfig, which mutates system
     # state; install the same layout manually instead.
     installPhase = ''
-      set -euo pipefail
       runHook preInstall
-
-      mkdir -p "$out/include" "$out/lib" "$out/src" "$out/share/man/man3"
-      cp -a build/include/. "$out/include/"
-      cp -a build/lib/. "$out/lib/"
-      cp -a build/src/. "$out/src/"
-
-      # The shared object's SONAME is libcs50.so.<major>; upstream's
-      # `make install` relies on ldconfig to create this symlink.
-      ln -sfn "libcs50.so.${version}" "$out/lib/libcs50.so.${pkgs.lib.versions.major version}"
-
-      shopt -s nullglob
-      for man in docs/*.3.gz; do
-        install -Dm 644 "$man" "$out/share/man/man3/''${man##*/}"
-      done
-      shopt -u nullglob
-
+      bash ${./scripts/install-libcs50.sh} \
+        "$out" \
+        "${version}" \
+        "${pkgs.lib.versions.major version}"
       runHook postInstall
     '';
 
